@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>background.jpg</file>
+        <file>8.jpg</file>
+        <file>5.GIF</file>
+        <file>exit.png</file>
+        <file>sm2.png</file>
+        <file>favicon.ico</file>
+        <file>tips.png</file>
+        <file>forgetpass.png</file>
+        <file>background_meitu_1.jpg</file>
+        <file>cpu1.gif</file>
+        <file>cpu3.gif</file>
+        <file>cpu1-3.gif</file>
+        <file>cpu2.gif</file>
+    </qresource>
+</RCC>

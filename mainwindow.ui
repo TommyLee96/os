@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1113</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+
+#MainWindow {
+background-color:rgba(0,0,0,0);border-image: url(:/background_meitu_1.jpg);}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>10</y>
+      <width>581</width>
+      <height>578</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget:pane {border-top:0px solid #e8f3f9;background:  transparent; }
+QTabBar::tab {background:transparent}</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tabMulti">
+     <attribute name="title">
+      <string>多级反馈</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>199</x>
+        <y>11</y>
+        <width>182</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="title">
+       <string>2级队列</string>
+      </property>
+      <widget class="QProgressBar" name="progressBar2nd">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>18</y>
+         <width>161</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar{
+border:2px solid grey;
+border-radius:5px;
+}
+
+QProgressBar::chunk {
+background-color:#05B8CC;
+width:20px;
+}</string>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+       <property name="textVisible">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>500</y>
+         <width>187</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="styleSheet">
+           <string notr="true"> border-style:solid;  
+       background: transparent;  
+       background-color: rgb(175, 238 ,238);  
+         font: 12pt &quot;微软雅黑&quot;;
+        
+        border-radius: 10px;  </string>
+          </property>
+          <property name="text">
+           <string>输入时间片大小(s)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit2nd">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget2nd">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>161</width>
+         <height>461</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 127, 0, 0);
+gridline-color: rgb(197,221,123);</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>388</x>
+        <y>11</y>
+        <width>182</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="title">
+       <string>3级队列</string>
+      </property>
+      <widget class="QProgressBar" name="progressBar3rd">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>161</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QProgressBar{
+border:2px solid grey;
+border-radius:5px;
+}
+
+QProgressBar::chunk {
+background-color:#05B8CC;
+width:20px;
+}</string>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+       <property name="textVisible">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>500</y>
+         <width>187</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="styleSheet">
+           <string notr="true"> border-style:solid;  
+       background: transparent;  
+       background-color: rgb(175, 238 ,238); 
+         font: 12pt &quot;微软雅黑&quot;;
+        
+        border-radius: 10px;  </string>
+          </property>
+          <property name="text">
+           <string>输入时间片大小(s)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit3rd">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget3rd">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>23</y>
+         <width>161</width>
+         <height>461</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 127 ,0, 0);
+gridline-color: rgb(197,221,123);</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>11</y>
+        <width>182</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+font: 12pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="title">
+       <string>1级队列</string>
+      </property>
+      <widget class="QProgressBar" name="progressBar1st">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>161</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar{
+border:2px solid grey;
+border-radius:5px;
+}
+
+QProgressBar::chunk {
+background-color:#05B8CC;
+width:20px;
+}</string>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+       <property name="textVisible">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>500</y>
+         <width>187</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true"> border-style:solid;  
+       background: transparent;  
+  background-color: rgb(175, 238 ,238); 
+         font: 12pt &quot;微软雅黑&quot;;
+        
+        border-radius: 10px;  </string>
+          </property>
+          <property name="text">
+           <string>输入时间片大小(s)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit1st">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget1st">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>161</width>
+         <height>461</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 127, 0, 0);
+gridline-color: rgb(197,221,123);</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButtonexit">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>480</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+  
+QPushButton#pushButtonexit{  
+  	font: 12pt &quot;微软雅黑&quot;;
+       background-color: rgb(85, 170, 255);  
+       border-radius: 10px;   
+}  
+  </string>
+    </property>
+    <property name="text">
+     <string>退出</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>50</y>
+      <width>276</width>
+      <height>224</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;微软雅黑&quot;;</string>
+    </property>
+    <property name="title">
+     <string>进程信息</string>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QTableWidget" name="tableWidgetInfo">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgba(0,0,0,0);
+
+</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTableWidget" name="tableWidgetProcess">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>156</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0,0,0,0);
+gridline-color: rgb(197,221,123);
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonReset">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>480</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+  
+QPushButton#pushButtonReset{  
+  font: 12pt &quot;微软雅黑&quot;;
+      background-color: rgb(85, 170, 255);  
+        border-radius: 10px;  
+}  
+  
+
+</string>
+    </property>
+    <property name="text">
+     <string>重置</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>320</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="styleSheet">
+        <string notr="true">
+  
+
+QWidget#label_4{
+       border-style:solid;  
+       background: transparent;  
+       background-color: rgb(85, 170, 255); 
+         font: 12pt &quot;微软雅黑&quot;;
+        
+        border-radius: 10px;  
+}  
+  
+
+
+ 
+</string>
+       </property>
+       <property name="text">
+        <string>演示速度</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="horizontalSlider">
+       <property name="styleSheet">
+        <string notr="true">QWidget#centralWidget{  
+       border-style:solid;  
+       background: transparent;  
+       background-color:#0066CC;  
+         
+}  
+  
+QSlider#horizontalSlider::groove:horizontal {    
+border: 1px solid #4A708B;    
+background: #orange;    
+height: 10px;    
+border-radius: 5px;    
+padding-left:-1px;    
+padding-right:-1px;    
+}    
+    
+QSlider#horizontalSlider::sub-page:horizontal {    
+background: qlineargradient(x1:0, y1:0, x2:0, y2:1,     
+    stop:0 #B1B1B1, stop:1 #c4c4c4);    
+background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,    
+    stop: 0 #5DCCFF, stop: 1 #1874CD);    
+border: 1px solid #4A708B;    
+height: 10px;    
+border-radius: 2px;    
+}    
+    
+QSlider#horizontalSlider::add-page:horizontal {    
+background: #575757;    
+border: 0px solid #777;    
+height: 10px;    
+border-radius: 2px;    
+}    
+    
+QSlider#horizontalSlider::handle:horizontal     
+{    
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5,     
+    stop:0.6 #45ADED, stop:0.778409 rgba(255, 255, 255, 255));    
+    
+    width: 11px;    
+    margin-top: -3px;    
+    margin-bottom: -3px;    
+    border-radius: 5px;    
+}    
+    
+QSlider#horizontalSlider::handle:horizontal:hover {    
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.6 #2A8BDA,     
+    stop:0.778409 rgba(255, 255, 255, 255));    
+    
+    width: 11px;    
+    margin-top: -3px;    
+    margin-bottom: -3px;    
+    border-radius: 5px;    
+}    
+    
+QSlider#horizontalSlider::sub-page:horizontal:disabled {    
+background: #00009C;    
+border-color: #999;    
+}    
+    
+QSlider#horizontalSlider::add-page:horizontal:disabled {    
+background: #eee;    
+border-color: #999;    
+}    
+    
+QSlider#horizontalSlider::handle:horizontal:disabled {    
+background: #eee;    
+border: 1px solid #aaa;    
+border-radius: 4px;    
+}  
+
+</string>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>10</number>
+       </property>
+       <property name="pageStep">
+        <number>1</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="tickInterval">
+        <number>1</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumber">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>161</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 9pt &quot;微软雅黑&quot;;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonStart">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>418</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+  
+QPushButton#pushButtonStart{  
+  	font: 12pt &quot;微软雅黑&quot;;
+       background-color: rgb(85, 170, 255);  
+       border-radius: 10px;   
+}  
+  
+
+  
+
+  </string>
+    </property>
+    <property name="text">
+     <string>开始执行</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonGenerate">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>418</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">  
+QPushButton#pushButtonGenerate{  
+  font: 12pt &quot;微软雅黑&quot;;
+      background-color: rgb(85, 170, 255);  
+        border-radius: 10px;  
+}  
+  
+</string>
+    </property>
+    <property name="text">
+     <string>生成进程</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
